@@ -21,7 +21,11 @@ Download `hnum.css` or `hnum.min.css` to use in your project for the basic style
 BUILDING
 --------
 
-You will need [stylus](http://learnboost.github.com/stylus) to build `hnum`.
+You will need [stylus](http://learnboost.github.com/stylus) to build `hnum`. Make your desired changes to `hnum.styl` and rebuild with `stylus`:
+
+```
+$ stylus hnum.styl
+```
 
 LICENSE
 -------
