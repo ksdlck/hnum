@@ -23,14 +23,14 @@ hmin = 1
 hmax = 6
 
 hctr(n)
-  unquote(join('', 'hnum-', n))
+  s('hnum-h%s', n)
 
 hpfx(n)
-  ctr = join('', 'counter(', hctr(n), ')')
+  ctr = s('counter(%s)', hctr(n))
   if n > 1
-    unquote(join('', hpfx(n - 1), ' "." ', ctr))
+    s('%s "." %s', hpfx(n - 1), ctr)
   else
-    unquote(ctr)
+    ctr
 
 hpair(hp, hn, i)
   {hp}
@@ -41,6 +41,6 @@ hpair(hp, hn, i)
 
 hp = body
 for n in hmin .. hmax
-  hn = unquote(join('', 'h', n))
+  hn = s('h%s', n)
   hpair hp, hn, n
   hp = hn

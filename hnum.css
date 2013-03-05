@@ -19,44 +19,44 @@
  * SOFTWARE.
  */
 body {
-  counter-reset: hnum-1;
+  counter-reset: hnum-h1;
 }
 h1:before {
-  content: counter(hnum-1) " ";
-  counter-increment: hnum-1;
+  content: counter(hnum-h1) " ";
+  counter-increment: hnum-h1;
 }
 h1 {
-  counter-reset: hnum-2;
+  counter-reset: hnum-h2;
 }
 h2:before {
-  content: counter(hnum-1) "." counter(hnum-2) " ";
-  counter-increment: hnum-2;
+  content: counter(hnum-h1) "." counter(hnum-h2) " ";
+  counter-increment: hnum-h2;
 }
 h2 {
-  counter-reset: hnum-3;
+  counter-reset: hnum-h3;
 }
 h3:before {
-  content: counter(hnum-1) "." counter(hnum-2) "." counter(hnum-3) " ";
-  counter-increment: hnum-3;
+  content: counter(hnum-h1) "." counter(hnum-h2) "." counter(hnum-h3) " ";
+  counter-increment: hnum-h3;
 }
 h3 {
-  counter-reset: hnum-4;
+  counter-reset: hnum-h4;
 }
 h4:before {
-  content: counter(hnum-1) "." counter(hnum-2) "." counter(hnum-3) "." counter(hnum-4) " ";
-  counter-increment: hnum-4;
+  content: counter(hnum-h1) "." counter(hnum-h2) "." counter(hnum-h3) "." counter(hnum-h4) " ";
+  counter-increment: hnum-h4;
 }
 h4 {
-  counter-reset: hnum-5;
+  counter-reset: hnum-h5;
 }
 h5:before {
-  content: counter(hnum-1) "." counter(hnum-2) "." counter(hnum-3) "." counter(hnum-4) "." counter(hnum-5) " ";
-  counter-increment: hnum-5;
+  content: counter(hnum-h1) "." counter(hnum-h2) "." counter(hnum-h3) "." counter(hnum-h4) "." counter(hnum-h5) " ";
+  counter-increment: hnum-h5;
 }
 h5 {
-  counter-reset: hnum-6;
+  counter-reset: hnum-h6;
 }
 h6:before {
-  content: counter(hnum-1) "." counter(hnum-2) "." counter(hnum-3) "." counter(hnum-4) "." counter(hnum-5) "." counter(hnum-6) " ";
-  counter-increment: hnum-6;
+  content: counter(hnum-h1) "." counter(hnum-h2) "." counter(hnum-h3) "." counter(hnum-h4) "." counter(hnum-h5) "." counter(hnum-h6) " ";
+  counter-increment: hnum-h6;
 }
